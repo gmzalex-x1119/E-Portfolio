@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Résumé | Alexander Gomez</title>
+<link rel="stylesheet" href="site.css">
+<style>
+.resume-layout{display:grid;grid-template-columns:360px minmax(0,1fr);gap:22px;padding:70px 0}
+.resume-actions{position:sticky;top:98px;align-self:start}
+.resume-actions h2,.resume-sheet h1,.resume-sheet h2,.resume-sheet h3{font-family:var(--mono)}
+.resume-actions h2{margin:0 0 18px;font-size:1.55rem}
+.resume-actions p{color:var(--muted)}
+.resume-actions .button{width:100%;margin-top:12px}
+.resume-meta{margin-top:28px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);font:700 .72rem var(--mono);letter-spacing:.13em;text-transform:uppercase}
+.resume-sheet{padding:42px;border:1px solid var(--line);background:var(--panel)}
+.resume-sheet h1{margin:0;color:var(--text);font-size:clamp(2rem,4vw,3rem)}
+.resume-subtitle{margin:8px 0;color:var(--cyan);font:700 .85rem var(--mono);letter-spacing:.2em;text-transform:uppercase}
+.resume-contact{margin:18px 0 38px;color:var(--muted);font:700 .78rem var(--mono)}
+.resume-section{padding:26px 0;border-top:1px solid var(--line)}
+.resume-section h2{margin:0 0 18px;color:var(--cyan);font-size:.82rem;letter-spacing:.22em;text-transform:uppercase}
+.resume-section h3{margin:0 0 4px;font-size:1.15rem}
+.resume-detail{margin:0 0 14px;color:var(--muted);font:700 .78rem var(--mono)}
+.resume-sheet p,.resume-sheet li{color:#c5ced6}
+.resume-sheet ul{padding-left:20px}
+.resume-entry+.resume-entry{margin-top:26px}
+.resume-skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.resume-skills strong{display:block;color:var(--cyan-dim);font:700 .75rem var(--mono);letter-spacing:.08em}
+@media(max-width:850px){.resume-layout{grid-template-columns:1fr;padding:48px 0}.resume-actions{position:static}.resume-sheet{padding:25px}}
+@media(max-width:520px){.resume-skills{grid-template-columns:1fr}.resume-contact{line-height:2}}
+@media print{.site-header,.resume-actions,footer{display:none!important}.resume-layout{display:block;padding:0}.resume-sheet{border:0}.resume-sheet a{color:inherit;text-decoration:none}body{background:#fff;color:#111}.resume-sheet p,.resume-sheet li{color:#222}}
+</style>
+</head>
+<body>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">AG</span><span><span class="brand-name">Alexander Gomez</span><span class="brand-subtitle">CYBERTECH PATHWAY</span></span></a><nav class="main-nav"><a href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 11 9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1Z"/></svg>Home</a><a href="about.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3"/><path d="M5 21c0-4 3-6 7-6s7 2 7 6"/></svg>About</a><a href="projects.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h7l2 2h9v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg>Projects</a><a href="skills.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14.7 6.3 3-3a4.2 4.2 0 0 0-5.5 5.5L4 17a2.1 2.1 0 1 0 3 3l8.2-8.2a4.2 4.2 0 0 0 5.5-5.5l-3 3-3-3Z"/></svg>Skills</a><a href="resume.html" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6Z"/><path d="M15 3v5h4M9 12h6M9 16h6"/></svg>Résumé</a><a href="contact.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 7 9 6 9-6"/></svg>Contact</a></nav><button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode">☼</button><a class="header-cta" href="contact.html">Get in touch</a></header>
+<main class="wrap"><div class="resume-layout"><aside class="card resume-actions"><p class="section-kicker">// Download central</p><h2>Alexander Gomez — Résumé</h2><p>A clean, print-ready PDF built from the résumé on this page.</p><a class="button button-primary" href="resume.pdf" download>Download PDF ↓</a><button class="button" type="button" id="printResume">Print this page</button><p class="resume-meta">Updated October 2026</p><p class="resume-meta">gmzalex039@gmail.com<br><br>(909) 314-8758</p><a class="button" href="contact.html">Contact me instead</a></aside>
+<article class="resume-sheet"><h1>Alexander Gomez</h1><p class="resume-subtitle">CyberTech Student · CyberTech Pathway</p><p class="resume-contact">gmzalex039@gmail.com · (909) 314-8758 · San Bernardino, California</p>
+<section class="resume-section"><h2>Profile</h2><p>High school senior (Class of 2027, GPA 3.5+) with four years in the Tech Academy repairing and troubleshooting student Chromebooks, plus customer-facing food service experience in a high-volume cafeteria. Systematic on a repair bench, comfortable building GIS maps in ArcGIS Pro, and quick to pick up new tools.</p></section>
+<section class="resume-section"><h2>Experience</h2><div class="resume-entry"><h3>Tech Academy Intern</h3><p class="resume-detail">Arroyo Valley High School · San Bernardino, California · Four years · Current</p><ul><li>Diagnose and repair student Chromebooks, isolating faults across power, display, keyboard, charging and software issues.</li><li>Perform screen, keyboard, battery and charging-port replacements, plus internal component swaps on an ESD-safe bench.</li><li>Assist students and faculty with hardware and software setup, imaging and device handover.</li><li>Log every device with its reported fault, repair applied and outcome for department service records.</li><li>Coordinate with site technology staff on priorities, parts and handoffs during heavy intake periods.</li></ul></div><div class="resume-entry"><h3>Cafeteria Assistant</h3><p class="resume-detail">Arroyo Valley High School · Junior and senior year</p><ul><li>Prepared food items and organized serving stations for breakfast and lunch service.</li><li>Served several hundred students a day during peak periods while keeping the line moving.</li><li>Managed and restocked inventory, tracked supplies and maintained food safety standards.</li><li>Kept the station clean and compliant under a certified food handler standard.</li></ul></div></section>
+<section class="resume-section"><h2>Education</h2><h3>Arroyo Valley High School</h3><p class="resume-detail">Tech Academy · San Bernardino, California · Class of 2027 · GPA 3.5+</p><p>Four-year Tech Academy program: computer hardware and repair, networking basics, cybersecurity fundamentals, geospatial data and computer science fundamentals.</p></section>
+<section class="resume-section"><h2>Certifications &amp; Awards</h2><div class="resume-entry"><h3>Food Handler Certification</h3><p>Food safety and preparation standards</p></div><div class="resume-entry"><h3>Academic Excellence Award</h3><p>Recognized for high academic achievement and commitment</p></div><div class="resume-entry"><h3>Tech Academy Internship Recognition</h3><p>Technical support, hardware repair and device troubleshooting</p></div></section>
+<section class="resume-section"><h2>Projects</h2><div class="resume-entry"><h3>GIS Disaster Response Project</h3><p class="resume-detail">Class project</p><ul><li>Built layered hazard, infrastructure and shelter maps from cleaned spreadsheet data to show response coverage.</li><li>Presented the finished map and its findings to a non-technical audience.</li></ul></div><div class="resume-entry"><h3>Coding &amp; Tech Experiments</h3><p class="resume-detail">Ongoing</p><p>Small scripting and automation exercises, electronics builds with breadboards and sensors, and defensive security practice labs.</p></div></section>
+<section class="resume-section"><h2>Community Service</h2><div class="resume-entry"><h3>Event &amp; School Support</h3><p>10+ hours supporting school and community events</p></div><div class="resume-entry"><h3>Academic Tutoring</h3><p>Tutored lower-level math students to improve comprehension and grades</p></div><div class="resume-entry"><h3>Tech Support</h3><p>Helped classmates with device setup and software troubleshooting</p></div></section>
+<section class="resume-section"><h2>Skills</h2><div class="resume-skills"><div><strong>Repair &amp; diagnostics</strong><p>Component replacement · fault isolation · ESD-safe handling · device logging</p></div><div><strong>Software &amp; data</strong><p>Scripting basics · command line · spreadsheet and CSV cleanup · GIS mapping</p></div><div><strong>Working with people</strong><p>Customer service · teamwork and handoffs · clear documentation · adaptable learner</p></div><div><strong>Food service</strong><p>Food prep and portioning · inventory and restocking · food safety · high-volume pace</p></div></div></section>
+<section class="resume-section"><h2>Career Goal</h2><p>Gain entry-level experience in retail, warehouse or tech support while training toward electrical work through trade school or an apprenticeship.</p></section>
+<section class="resume-section"><h2>Training</h2><ul><li>Tech Academy coursework — Arroyo Valley High School, four-year program (in progress)</li></ul></section>
+</article></div><section class="next summary-next"><div class="summary-next-inner"><div><p class="section-kicker">// What's next</p><h2>More experiments are always<br class="summary-break"> in progress</h2><p>Open to internships, volunteer tech roles and job shadowing — I'm looking for tech teams that will let me work on real problems while I keep learning.</p></div><a class="button button-primary summary-contact" href="contact.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 7 9 6 9-6"/></svg>Get in touch</a></div></section></main>
+<script>document.getElementById('printResume').addEventListener('click',()=>window.print());</script>
+<script>
+const themeButton = document.getElementById('themeToggle');
+const setTheme = (light) => {
+  document.body.classList.toggle('light', light);
+  if (themeButton) {
+    themeButton.textContent = light ? '☾' : '☼';
+    themeButton.setAttribute('aria-label', light ? 'Switch to dark mode' : 'Switch to light mode');
+  }
+  localStorage.setItem('portfolio-theme', light ? 'light' : 'dark');
+};
+const savedTheme = localStorage.getItem('portfolio-theme');
+setTheme(savedTheme === 'light');
+if (themeButton) themeButton.addEventListener('click', () => setTheme(!document.body.classList.contains('light')));
+const renderTargets = document.querySelectorAll('main section, .hero, .card, .work-card, .project-card, .resume-section, .next-box, .summary-next');
+document.body.classList.add('render-ready');
+renderTargets.forEach((element, index) => {
+  element.classList.add('render-in');
+  element.style.setProperty('--render-delay', `${Math.min(index * 45, 240)}ms`);
+});
+const renderObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('render-visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.08 });
+renderTargets.forEach((element) => renderObserver.observe(element));
+</script><footer class="site-footer"><div class="wrap site-footer-grid"><div class="footer-identity-block"><div class="footer-identity"><span class="brand-mark">AG</span><span><span class="footer-brand">Alexander Gomez</span><span class="brand-subtitle">CYBERTECH PATHWAY</span></span></div><p>Arroyo Valley High School · San Bernardino, California</p><p class="footer-availability"><span class="status-dot"></span>OPEN TO INTERNSHIPS, VOLUNTEER TECH ROLES AND JOB SHADOWING</p></div><div><p class="footer-heading">SECTIONS</p><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="skills.html">Skills</a><a href="resume.html">Résumé</a><a href="contact.html">Contact</a></div></div><div><p class="footer-heading">CONTACT</p><div class="footer-contact"><a href="mailto:gmzalex039@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 7 9 6 9-6"/></svg>gmzalex039@gmail.com</a><a href="tel:9093148758"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h3l1.5 4-2 1.5a15 15 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2 2C11.3 19 5 12.7 5 5a2 2 0 0 1 2-2Z"/></svg>(909) 314-8758</a><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Z"/><circle cx="12" cy="9" r="2"/></svg>San Bernardino, California</span></div></div></div></footer></body>
+</html>
